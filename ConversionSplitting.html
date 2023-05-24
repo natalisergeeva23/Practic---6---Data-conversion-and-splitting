@@ -15152,7 +15152,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;weatherAUS_clear.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#считывание данных с файла</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;vgsales_19.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -15192,143 +15193,89 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Unnamed: 0</th>
-      <th>Date</th>
-      <th>Location</th>
-      <th>MinTemp</th>
-      <th>MaxTemp</th>
-      <th>Rainfall</th>
-      <th>WindGustDir</th>
-      <th>WindGustSpeed</th>
-      <th>WindDir9am</th>
-      <th>WindDir3pm</th>
-      <th>WindSpeed9am</th>
-      <th>WindSpeed3pm</th>
-      <th>Humidity9am</th>
-      <th>Humidity3pm</th>
-      <th>Pressure9am</th>
-      <th>Pressure3pm</th>
-      <th>Temp9am</th>
-      <th>Temp3pm</th>
-      <th>RainToday</th>
-      <th>RainTomorrow</th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Publisher</th>
+      <th>NA_Sales</th>
+      <th>EU_Sales</th>
+      <th>JP_Sales</th>
+      <th>Other_Sales</th>
+      <th>Global_Sales</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>0</td>
-      <td>2008-12-01</td>
-      <td>Albury</td>
-      <td>13.4</td>
-      <td>22.9</td>
-      <td>0.6</td>
-      <td>W</td>
-      <td>44.0</td>
-      <td>W</td>
-      <td>WNW</td>
-      <td>20.0</td>
-      <td>24.0</td>
-      <td>71.0</td>
-      <td>22.0</td>
-      <td>1007.7</td>
-      <td>1007.1</td>
-      <td>16.9</td>
-      <td>21.8</td>
-      <td>No</td>
-      <td>No</td>
+      <td>7164</td>
+      <td>Discovery Kids: Dolphin Discovery</td>
+      <td>DS</td>
+      <td>2008.0</td>
+      <td>Simulation</td>
+      <td>505 Games</td>
+      <td>0.21</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>0.22</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
-      <td>2008-12-02</td>
-      <td>Albury</td>
-      <td>7.4</td>
-      <td>25.1</td>
-      <td>0.0</td>
-      <td>WNW</td>
-      <td>44.0</td>
-      <td>NNW</td>
-      <td>WSW</td>
-      <td>4.0</td>
-      <td>22.0</td>
-      <td>44.0</td>
-      <td>25.0</td>
-      <td>1010.6</td>
-      <td>1007.8</td>
-      <td>17.2</td>
-      <td>24.3</td>
-      <td>No</td>
-      <td>No</td>
+      <td>15834</td>
+      <td>LifeSigns: Surgical Unit</td>
+      <td>DS</td>
+      <td>2005.0</td>
+      <td>Simulation</td>
+      <td>JoWood Productions</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.02</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2</td>
-      <td>2008-12-03</td>
-      <td>Albury</td>
-      <td>12.9</td>
-      <td>25.7</td>
-      <td>0.0</td>
-      <td>WSW</td>
-      <td>46.0</td>
-      <td>W</td>
-      <td>WSW</td>
-      <td>19.0</td>
-      <td>26.0</td>
-      <td>38.0</td>
-      <td>30.0</td>
-      <td>1007.6</td>
-      <td>1008.7</td>
-      <td>21.0</td>
-      <td>23.2</td>
-      <td>No</td>
-      <td>No</td>
+      <td>11539</td>
+      <td>Sengoku Musou 3: Moushouden</td>
+      <td>Wii</td>
+      <td>2011.0</td>
+      <td>Action</td>
+      <td>Ackkstudios</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
+      <td>0.00</td>
+      <td>0.08</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>3</td>
-      <td>2008-12-04</td>
-      <td>Albury</td>
-      <td>9.2</td>
-      <td>28.0</td>
-      <td>0.0</td>
-      <td>NE</td>
-      <td>24.0</td>
-      <td>SE</td>
-      <td>E</td>
-      <td>11.0</td>
-      <td>9.0</td>
-      <td>45.0</td>
-      <td>16.0</td>
-      <td>1017.6</td>
-      <td>1012.8</td>
-      <td>18.1</td>
-      <td>26.5</td>
-      <td>No</td>
-      <td>No</td>
+      <td>593</td>
+      <td>LittleBigPlanet</td>
+      <td>PSP</td>
+      <td>2009.0</td>
+      <td>Platform</td>
+      <td>Sony Computer Entertainment</td>
+      <td>0.64</td>
+      <td>1.24</td>
+      <td>0.01</td>
+      <td>0.69</td>
+      <td>2.58</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>4</td>
-      <td>2008-12-05</td>
-      <td>Albury</td>
-      <td>17.5</td>
-      <td>32.3</td>
-      <td>1.0</td>
-      <td>W</td>
-      <td>41.0</td>
-      <td>ENE</td>
-      <td>NW</td>
-      <td>7.0</td>
-      <td>20.0</td>
-      <td>82.0</td>
-      <td>33.0</td>
-      <td>1010.8</td>
-      <td>1006.0</td>
-      <td>17.8</td>
-      <td>29.7</td>
-      <td>No</td>
-      <td>No</td>
+      <td>12211</td>
+      <td>Yoake Yori Ruriiro na: Brighter than Dawning Blue</td>
+      <td>PS2</td>
+      <td>2006.0</td>
+      <td>Adventure</td>
+      <td>Aria</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.07</td>
     </tr>
     <tr>
       <th>...</th>
@@ -15343,459 +15290,80 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>140782</th>
-      <td>145454</td>
-      <td>2017-06-20</td>
-      <td>Uluru</td>
-      <td>3.5</td>
-      <td>21.8</td>
-      <td>0.0</td>
-      <td>E</td>
-      <td>31.0</td>
-      <td>ESE</td>
-      <td>E</td>
-      <td>15.0</td>
-      <td>13.0</td>
-      <td>59.0</td>
-      <td>27.0</td>
-      <td>1024.7</td>
-      <td>1021.2</td>
-      <td>9.4</td>
-      <td>20.9</td>
-      <td>No</td>
-      <td>No</td>
+      <th>548</th>
+      <td>4537</td>
+      <td>Castlevania: Portrait of Ruin</td>
+      <td>DS</td>
+      <td>2006.0</td>
+      <td>Platform</td>
+      <td>Konami Digital Entertainment</td>
+      <td>0.33</td>
+      <td>0.03</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.43</td>
     </tr>
     <tr>
-      <th>140783</th>
-      <td>145455</td>
-      <td>2017-06-21</td>
-      <td>Uluru</td>
-      <td>2.8</td>
-      <td>23.4</td>
-      <td>0.0</td>
-      <td>E</td>
-      <td>31.0</td>
-      <td>SE</td>
-      <td>ENE</td>
-      <td>13.0</td>
-      <td>11.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1024.6</td>
-      <td>1020.3</td>
-      <td>10.1</td>
-      <td>22.4</td>
-      <td>No</td>
-      <td>No</td>
+      <th>549</th>
+      <td>11524</td>
+      <td>Puzzler Mind Gym 3D</td>
+      <td>3DS</td>
+      <td>2011.0</td>
+      <td>Puzzle</td>
+      <td>Ubisoft</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
     </tr>
     <tr>
-      <th>140784</th>
-      <td>145456</td>
-      <td>2017-06-22</td>
-      <td>Uluru</td>
-      <td>3.6</td>
-      <td>25.3</td>
-      <td>0.0</td>
-      <td>NNW</td>
-      <td>22.0</td>
-      <td>SE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>9.0</td>
-      <td>56.0</td>
-      <td>21.0</td>
-      <td>1023.5</td>
-      <td>1019.1</td>
-      <td>10.9</td>
-      <td>24.5</td>
-      <td>No</td>
-      <td>No</td>
+      <th>550</th>
+      <td>1366</td>
+      <td>Inazuma Eleven 2</td>
+      <td>DS</td>
+      <td>2009.0</td>
+      <td>Role-Playing</td>
+      <td>Nintendo</td>
+      <td>0.00</td>
+      <td>0.21</td>
+      <td>1.18</td>
+      <td>0.03</td>
+      <td>1.42</td>
     </tr>
     <tr>
-      <th>140785</th>
-      <td>145457</td>
-      <td>2017-06-23</td>
-      <td>Uluru</td>
-      <td>5.4</td>
-      <td>26.9</td>
-      <td>0.0</td>
-      <td>N</td>
-      <td>37.0</td>
-      <td>SE</td>
-      <td>WNW</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>53.0</td>
-      <td>24.0</td>
-      <td>1021.0</td>
-      <td>1016.8</td>
-      <td>12.5</td>
-      <td>26.1</td>
-      <td>No</td>
-      <td>No</td>
+      <th>551</th>
+      <td>4135</td>
+      <td>Tomb Raider: Underworld</td>
+      <td>Wii</td>
+      <td>2008.0</td>
+      <td>Action</td>
+      <td>Eidos Interactive</td>
+      <td>0.14</td>
+      <td>0.28</td>
+      <td>0.00</td>
+      <td>0.06</td>
+      <td>0.48</td>
     </tr>
     <tr>
-      <th>140786</th>
-      <td>145458</td>
-      <td>2017-06-24</td>
-      <td>Uluru</td>
-      <td>7.8</td>
-      <td>27.0</td>
-      <td>0.0</td>
-      <td>SE</td>
-      <td>28.0</td>
-      <td>SSE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>7.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1019.4</td>
-      <td>1016.5</td>
-      <td>15.1</td>
-      <td>26.0</td>
-      <td>No</td>
-      <td>No</td>
+      <th>552</th>
+      <td>3828</td>
+      <td>GT Pro Series</td>
+      <td>Wii</td>
+      <td>2006.0</td>
+      <td>Racing</td>
+      <td>Ubisoft</td>
+      <td>0.46</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>0.04</td>
+      <td>0.52</td>
     </tr>
   </tbody>
 </table>
-<p>140787 rows × 20 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Для удобства удаляем ненужные стобцы.</p>
-
-</div>
-</div>
-</div>
-</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;Unnamed: 0&#39;</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">)</span>
-<span class="n">df</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Location</th>
-      <th>MinTemp</th>
-      <th>MaxTemp</th>
-      <th>Rainfall</th>
-      <th>WindGustDir</th>
-      <th>WindGustSpeed</th>
-      <th>WindDir9am</th>
-      <th>WindDir3pm</th>
-      <th>WindSpeed9am</th>
-      <th>WindSpeed3pm</th>
-      <th>Humidity9am</th>
-      <th>Humidity3pm</th>
-      <th>Pressure9am</th>
-      <th>Pressure3pm</th>
-      <th>Temp9am</th>
-      <th>Temp3pm</th>
-      <th>RainToday</th>
-      <th>RainTomorrow</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Albury</td>
-      <td>13.4</td>
-      <td>22.9</td>
-      <td>0.6</td>
-      <td>W</td>
-      <td>44.0</td>
-      <td>W</td>
-      <td>WNW</td>
-      <td>20.0</td>
-      <td>24.0</td>
-      <td>71.0</td>
-      <td>22.0</td>
-      <td>1007.7</td>
-      <td>1007.1</td>
-      <td>16.9</td>
-      <td>21.8</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Albury</td>
-      <td>7.4</td>
-      <td>25.1</td>
-      <td>0.0</td>
-      <td>WNW</td>
-      <td>44.0</td>
-      <td>NNW</td>
-      <td>WSW</td>
-      <td>4.0</td>
-      <td>22.0</td>
-      <td>44.0</td>
-      <td>25.0</td>
-      <td>1010.6</td>
-      <td>1007.8</td>
-      <td>17.2</td>
-      <td>24.3</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Albury</td>
-      <td>12.9</td>
-      <td>25.7</td>
-      <td>0.0</td>
-      <td>WSW</td>
-      <td>46.0</td>
-      <td>W</td>
-      <td>WSW</td>
-      <td>19.0</td>
-      <td>26.0</td>
-      <td>38.0</td>
-      <td>30.0</td>
-      <td>1007.6</td>
-      <td>1008.7</td>
-      <td>21.0</td>
-      <td>23.2</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Albury</td>
-      <td>9.2</td>
-      <td>28.0</td>
-      <td>0.0</td>
-      <td>NE</td>
-      <td>24.0</td>
-      <td>SE</td>
-      <td>E</td>
-      <td>11.0</td>
-      <td>9.0</td>
-      <td>45.0</td>
-      <td>16.0</td>
-      <td>1017.6</td>
-      <td>1012.8</td>
-      <td>18.1</td>
-      <td>26.5</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Albury</td>
-      <td>17.5</td>
-      <td>32.3</td>
-      <td>1.0</td>
-      <td>W</td>
-      <td>41.0</td>
-      <td>ENE</td>
-      <td>NW</td>
-      <td>7.0</td>
-      <td>20.0</td>
-      <td>82.0</td>
-      <td>33.0</td>
-      <td>1010.8</td>
-      <td>1006.0</td>
-      <td>17.8</td>
-      <td>29.7</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>140782</th>
-      <td>Uluru</td>
-      <td>3.5</td>
-      <td>21.8</td>
-      <td>0.0</td>
-      <td>E</td>
-      <td>31.0</td>
-      <td>ESE</td>
-      <td>E</td>
-      <td>15.0</td>
-      <td>13.0</td>
-      <td>59.0</td>
-      <td>27.0</td>
-      <td>1024.7</td>
-      <td>1021.2</td>
-      <td>9.4</td>
-      <td>20.9</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>140783</th>
-      <td>Uluru</td>
-      <td>2.8</td>
-      <td>23.4</td>
-      <td>0.0</td>
-      <td>E</td>
-      <td>31.0</td>
-      <td>SE</td>
-      <td>ENE</td>
-      <td>13.0</td>
-      <td>11.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1024.6</td>
-      <td>1020.3</td>
-      <td>10.1</td>
-      <td>22.4</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>140784</th>
-      <td>Uluru</td>
-      <td>3.6</td>
-      <td>25.3</td>
-      <td>0.0</td>
-      <td>NNW</td>
-      <td>22.0</td>
-      <td>SE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>9.0</td>
-      <td>56.0</td>
-      <td>21.0</td>
-      <td>1023.5</td>
-      <td>1019.1</td>
-      <td>10.9</td>
-      <td>24.5</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>140785</th>
-      <td>Uluru</td>
-      <td>5.4</td>
-      <td>26.9</td>
-      <td>0.0</td>
-      <td>N</td>
-      <td>37.0</td>
-      <td>SE</td>
-      <td>WNW</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>53.0</td>
-      <td>24.0</td>
-      <td>1021.0</td>
-      <td>1016.8</td>
-      <td>12.5</td>
-      <td>26.1</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>140786</th>
-      <td>Uluru</td>
-      <td>7.8</td>
-      <td>27.0</td>
-      <td>0.0</td>
-      <td>SE</td>
-      <td>28.0</td>
-      <td>SSE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>7.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1019.4</td>
-      <td>1016.5</td>
-      <td>15.1</td>
-      <td>26.0</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
-<p>140787 rows × 18 columns</p>
+<p>553 rows × 11 columns</p>
 </div>
 </div>
 
@@ -15829,7 +15397,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OrdinalEncoder</span>
 
 <span class="n">Oenc</span> <span class="o">=</span> <span class="n">OrdinalEncoder</span><span class="p">()</span>
-<span class="n">Oenc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Location&#39;</span><span class="p">,</span><span class="s1">&#39;WindGustDir&#39;</span><span class="p">]])</span>
+<span class="n">Oenc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Platform&#39;</span><span class="p">,</span><span class="s1">&#39;Publisher&#39;</span><span class="p">]])</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -15869,131 +15437,89 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Location</th>
-      <th>MinTemp</th>
-      <th>MaxTemp</th>
-      <th>Rainfall</th>
-      <th>WindGustDir</th>
-      <th>WindGustSpeed</th>
-      <th>WindDir9am</th>
-      <th>WindDir3pm</th>
-      <th>WindSpeed9am</th>
-      <th>WindSpeed3pm</th>
-      <th>Humidity9am</th>
-      <th>Humidity3pm</th>
-      <th>Pressure9am</th>
-      <th>Pressure3pm</th>
-      <th>Temp9am</th>
-      <th>Temp3pm</th>
-      <th>RainToday</th>
-      <th>RainTomorrow</th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Publisher</th>
+      <th>NA_Sales</th>
+      <th>EU_Sales</th>
+      <th>JP_Sales</th>
+      <th>Other_Sales</th>
+      <th>Global_Sales</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Albury</td>
-      <td>13.4</td>
-      <td>22.9</td>
-      <td>0.6</td>
-      <td>W</td>
-      <td>44.0</td>
-      <td>W</td>
-      <td>WNW</td>
-      <td>20.0</td>
-      <td>24.0</td>
-      <td>71.0</td>
-      <td>22.0</td>
-      <td>1007.7</td>
-      <td>1007.1</td>
-      <td>16.9</td>
-      <td>21.8</td>
-      <td>No</td>
-      <td>No</td>
+      <td>7164</td>
+      <td>Discovery Kids: Dolphin Discovery</td>
+      <td>DS</td>
+      <td>2008.0</td>
+      <td>Simulation</td>
+      <td>505 Games</td>
+      <td>0.21</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>0.22</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Albury</td>
-      <td>7.4</td>
-      <td>25.1</td>
-      <td>0.0</td>
-      <td>WNW</td>
-      <td>44.0</td>
-      <td>NNW</td>
-      <td>WSW</td>
-      <td>4.0</td>
-      <td>22.0</td>
-      <td>44.0</td>
-      <td>25.0</td>
-      <td>1010.6</td>
-      <td>1007.8</td>
-      <td>17.2</td>
-      <td>24.3</td>
-      <td>No</td>
-      <td>No</td>
+      <td>15834</td>
+      <td>LifeSigns: Surgical Unit</td>
+      <td>DS</td>
+      <td>2005.0</td>
+      <td>Simulation</td>
+      <td>JoWood Productions</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.02</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Albury</td>
-      <td>12.9</td>
-      <td>25.7</td>
-      <td>0.0</td>
-      <td>WSW</td>
-      <td>46.0</td>
-      <td>W</td>
-      <td>WSW</td>
-      <td>19.0</td>
-      <td>26.0</td>
-      <td>38.0</td>
-      <td>30.0</td>
-      <td>1007.6</td>
-      <td>1008.7</td>
-      <td>21.0</td>
-      <td>23.2</td>
-      <td>No</td>
-      <td>No</td>
+      <td>11539</td>
+      <td>Sengoku Musou 3: Moushouden</td>
+      <td>Wii</td>
+      <td>2011.0</td>
+      <td>Action</td>
+      <td>Ackkstudios</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
+      <td>0.00</td>
+      <td>0.08</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Albury</td>
-      <td>9.2</td>
-      <td>28.0</td>
-      <td>0.0</td>
-      <td>NE</td>
-      <td>24.0</td>
-      <td>SE</td>
-      <td>E</td>
-      <td>11.0</td>
-      <td>9.0</td>
-      <td>45.0</td>
-      <td>16.0</td>
-      <td>1017.6</td>
-      <td>1012.8</td>
-      <td>18.1</td>
-      <td>26.5</td>
-      <td>No</td>
-      <td>No</td>
+      <td>593</td>
+      <td>LittleBigPlanet</td>
+      <td>PSP</td>
+      <td>2009.0</td>
+      <td>Platform</td>
+      <td>Sony Computer Entertainment</td>
+      <td>0.64</td>
+      <td>1.24</td>
+      <td>0.01</td>
+      <td>0.69</td>
+      <td>2.58</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Albury</td>
-      <td>17.5</td>
-      <td>32.3</td>
-      <td>1.0</td>
-      <td>W</td>
-      <td>41.0</td>
-      <td>ENE</td>
-      <td>NW</td>
-      <td>7.0</td>
-      <td>20.0</td>
-      <td>82.0</td>
-      <td>33.0</td>
-      <td>1010.8</td>
-      <td>1006.0</td>
-      <td>17.8</td>
-      <td>29.7</td>
-      <td>No</td>
-      <td>No</td>
+      <td>12211</td>
+      <td>Yoake Yori Ruriiro na: Brighter than Dawning Blue</td>
+      <td>PS2</td>
+      <td>2006.0</td>
+      <td>Adventure</td>
+      <td>Aria</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.07</td>
     </tr>
     <tr>
       <th>...</th>
@@ -16008,122 +15534,80 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>140782</th>
-      <td>Uluru</td>
-      <td>3.5</td>
-      <td>21.8</td>
-      <td>0.0</td>
-      <td>E</td>
-      <td>31.0</td>
-      <td>ESE</td>
-      <td>E</td>
-      <td>15.0</td>
-      <td>13.0</td>
-      <td>59.0</td>
-      <td>27.0</td>
-      <td>1024.7</td>
-      <td>1021.2</td>
-      <td>9.4</td>
-      <td>20.9</td>
-      <td>No</td>
-      <td>No</td>
+      <th>548</th>
+      <td>4537</td>
+      <td>Castlevania: Portrait of Ruin</td>
+      <td>DS</td>
+      <td>2006.0</td>
+      <td>Platform</td>
+      <td>Konami Digital Entertainment</td>
+      <td>0.33</td>
+      <td>0.03</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.43</td>
     </tr>
     <tr>
-      <th>140783</th>
-      <td>Uluru</td>
-      <td>2.8</td>
-      <td>23.4</td>
-      <td>0.0</td>
-      <td>E</td>
-      <td>31.0</td>
-      <td>SE</td>
-      <td>ENE</td>
-      <td>13.0</td>
-      <td>11.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1024.6</td>
-      <td>1020.3</td>
-      <td>10.1</td>
-      <td>22.4</td>
-      <td>No</td>
-      <td>No</td>
+      <th>549</th>
+      <td>11524</td>
+      <td>Puzzler Mind Gym 3D</td>
+      <td>3DS</td>
+      <td>2011.0</td>
+      <td>Puzzle</td>
+      <td>Ubisoft</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
     </tr>
     <tr>
-      <th>140784</th>
-      <td>Uluru</td>
-      <td>3.6</td>
-      <td>25.3</td>
-      <td>0.0</td>
-      <td>NNW</td>
-      <td>22.0</td>
-      <td>SE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>9.0</td>
-      <td>56.0</td>
-      <td>21.0</td>
-      <td>1023.5</td>
-      <td>1019.1</td>
-      <td>10.9</td>
-      <td>24.5</td>
-      <td>No</td>
-      <td>No</td>
+      <th>550</th>
+      <td>1366</td>
+      <td>Inazuma Eleven 2</td>
+      <td>DS</td>
+      <td>2009.0</td>
+      <td>Role-Playing</td>
+      <td>Nintendo</td>
+      <td>0.00</td>
+      <td>0.21</td>
+      <td>1.18</td>
+      <td>0.03</td>
+      <td>1.42</td>
     </tr>
     <tr>
-      <th>140785</th>
-      <td>Uluru</td>
-      <td>5.4</td>
-      <td>26.9</td>
-      <td>0.0</td>
-      <td>N</td>
-      <td>37.0</td>
-      <td>SE</td>
-      <td>WNW</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>53.0</td>
-      <td>24.0</td>
-      <td>1021.0</td>
-      <td>1016.8</td>
-      <td>12.5</td>
-      <td>26.1</td>
-      <td>No</td>
-      <td>No</td>
+      <th>551</th>
+      <td>4135</td>
+      <td>Tomb Raider: Underworld</td>
+      <td>Wii</td>
+      <td>2008.0</td>
+      <td>Action</td>
+      <td>Eidos Interactive</td>
+      <td>0.14</td>
+      <td>0.28</td>
+      <td>0.00</td>
+      <td>0.06</td>
+      <td>0.48</td>
     </tr>
     <tr>
-      <th>140786</th>
-      <td>Uluru</td>
-      <td>7.8</td>
-      <td>27.0</td>
-      <td>0.0</td>
-      <td>SE</td>
-      <td>28.0</td>
-      <td>SSE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>7.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1019.4</td>
-      <td>1016.5</td>
-      <td>15.1</td>
-      <td>26.0</td>
-      <td>No</td>
-      <td>No</td>
+      <th>552</th>
+      <td>3828</td>
+      <td>GT Pro Series</td>
+      <td>Wii</td>
+      <td>2006.0</td>
+      <td>Racing</td>
+      <td>Ubisoft</td>
+      <td>0.46</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>0.04</td>
+      <td>0.52</td>
     </tr>
   </tbody>
 </table>
-<p>140787 rows × 18 columns</p>
+<p>553 rows × 11 columns</p>
 </div>
 </div>
 
@@ -16140,7 +15624,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Вызовем функцию &quot;categories&quot; для определения значений в записанной переменной. Например, в первой строке столбца Location  стоит слово - Albury, по списку оно под 3 номером. Произведем кодирование.</p>
+<p>Вызовем функцию &quot;categories&quot; для определения значений в записанной переменной. Например, в первой строке столбца Platform  стоит слово - DS, по списку оно под 3 номером. Произведем кодирование.</p>
 
 </div>
 </div>
@@ -16175,19 +15659,50 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[array([&#39;Adelaide&#39;, &#39;Albany&#39;, &#39;Albury&#39;, &#39;AliceSprings&#39;, &#39;BadgerysCreek&#39;,
-        &#39;Ballarat&#39;, &#39;Bendigo&#39;, &#39;Brisbane&#39;, &#39;Cairns&#39;, &#39;Canberra&#39;, &#39;Cobar&#39;,
-        &#39;CoffsHarbour&#39;, &#39;Dartmoor&#39;, &#39;Darwin&#39;, &#39;GoldCoast&#39;, &#39;Hobart&#39;,
-        &#39;Katherine&#39;, &#39;Launceston&#39;, &#39;Melbourne&#39;, &#39;MelbourneAirport&#39;,
-        &#39;Mildura&#39;, &#39;Moree&#39;, &#39;MountGambier&#39;, &#39;MountGinini&#39;, &#39;Newcastle&#39;,
-        &#39;Nhil&#39;, &#39;NorahHead&#39;, &#39;NorfolkIsland&#39;, &#39;Nuriootpa&#39;, &#39;PearceRAAF&#39;,
-        &#39;Penrith&#39;, &#39;Perth&#39;, &#39;PerthAirport&#39;, &#39;Portland&#39;, &#39;Richmond&#39;, &#39;Sale&#39;,
-        &#39;SalmonGums&#39;, &#39;Sydney&#39;, &#39;SydneyAirport&#39;, &#39;Townsville&#39;,
-        &#39;Tuggeranong&#39;, &#39;Uluru&#39;, &#39;WaggaWagga&#39;, &#39;Walpole&#39;, &#39;Watsonia&#39;,
-        &#39;Williamtown&#39;, &#39;Witchcliffe&#39;, &#39;Wollongong&#39;, &#39;Woomera&#39;],
-       dtype=object),
- array([&#39;E&#39;, &#39;ENE&#39;, &#39;ESE&#39;, &#39;N&#39;, &#39;NE&#39;, &#39;NNE&#39;, &#39;NNW&#39;, &#39;NW&#39;, &#39;S&#39;, &#39;SE&#39;, &#39;SSE&#39;,
-        &#39;SSW&#39;, &#39;SW&#39;, &#39;Unknown&#39;, &#39;W&#39;, &#39;WNW&#39;, &#39;WSW&#39;], dtype=object)]</pre>
+<pre>[array([&#39;2600&#39;, &#39;3DS&#39;, &#39;DC&#39;, &#39;DS&#39;, &#39;GB&#39;, &#39;GBA&#39;, &#39;GC&#39;, &#39;GEN&#39;, &#39;N64&#39;, &#39;NES&#39;,
+        &#39;PC&#39;, &#39;PS&#39;, &#39;PS2&#39;, &#39;PS3&#39;, &#39;PS4&#39;, &#39;PSP&#39;, &#39;PSV&#39;, &#39;SAT&#39;, &#39;SNES&#39;, &#39;WS&#39;,
+        &#39;Wii&#39;, &#39;WiiU&#39;, &#39;X360&#39;, &#39;XB&#39;, &#39;XOne&#39;], dtype=object),
+ array([&#39;3DO&#39;, &#39;505 Games&#39;, &#39;5pb&#39;, &#39;AQ Interactive&#39;,
+        &#39;Acclaim Entertainment&#39;, &#39;Ackkstudios&#39;, &#39;Activision&#39;,
+        &#39;Activision Value&#39;, &#39;Alchemist&#39;, &#39;Aqua Plus&#39;, &#39;Arc System Works&#39;,
+        &#39;Arena Entertainment&#39;, &#39;Aria&#39;, &#39;ArtDink&#39;, &#39;Aspyr&#39;, &#39;Astragon&#39;,
+        &#39;Atari&#39;, &#39;Atlus&#39;, &#39;Avanquest Software&#39;, &#39;BAM! Entertainment&#39;,
+        &#39;Banpresto&#39;, &#39;Bethesda Softworks&#39;, &#39;Big Fish Games&#39;,
+        &#39;Blast! Entertainment Ltd&#39;, &#39;CTO SpA&#39;, &#39;Capcom&#39;, &#39;Cave&#39;,
+        &#39;ChunSoft&#39;, &#39;Codemasters&#39;, &#39;Crave Entertainment&#39;, &#39;Crimson Cow&#39;,
+        &#39;D3Publisher&#39;, &#39;DHM Interactive&#39;, &#39;DTP Entertainment&#39;,
+        &#39;Deep Silver&#39;, &#39;Devolver Digital&#39;, &#39;Disney Interactive Studios&#39;,
+        &#39;Eidos Interactive&#39;, &#39;Electronic Arts&#39;, &#39;Encore&#39;, &#39;Enterbrain&#39;,
+        &#39;Evolved Games&#39;, &#39;Falcom Corporation&#39;, &#39;Focus Home Interactive&#39;,
+        &#39;Foreign Media Games&#39;, &#39;FuRyu&#39;, &#39;Funbox Media&#39;, &#39;Funsta&#39;, &#39;GSP&#39;,
+        &#39;GT Interactive&#39;, &#39;Gaga&#39;, &#39;Game Factory&#39;, &#39;GameMill Entertainment&#39;,
+        &#39;Genki&#39;, &#39;Global Star&#39;, &#39;Graffiti&#39;, &#39;Gremlin Interactive Ltd&#39;,
+        &#39;Hackberry&#39;, &#39;Harmonix Music Systems&#39;, &#39;Hasbro Interactive&#39;,
+        &#39;Hip Interactive&#39;, &#39;Hudson Soft&#39;, &#39;Idea Factory&#39;,
+        &#39;Idea Factory International&#39;, &#39;Ignition Entertainment&#39;, &#39;Imagic&#39;,
+        &#39;Infogrames&#39;, &#39;Interplay&#39;, &#39;Irem Software Engineering&#39;,
+        &#39;JoWood Productions&#39;, &#39;Kadokawa Games&#39;, &#39;Kadokawa Shoten&#39;,
+        &#39;Kalypso Media&#39;, &#39;Knowledge Adventure&#39;,
+        &#39;Konami Digital Entertainment&#39;, &#39;LucasArts&#39;, &#39;MTV Games&#39;, &#39;Magix&#39;,
+        &#39;Majesco Entertainment&#39;, &#39;Marvelous Entertainment&#39;,
+        &#39;Marvelous Interactive&#39;, &#39;Mattel Interactive&#39;, &#39;Media Works&#39;,
+        &#39;Microids&#39;, &#39;Microsoft Game Studios&#39;, &#39;Midway Games&#39;,
+        &#39;Milestone S.r.l.&#39;, &#39;Mindscape&#39;, &#39;Misawa&#39;, &#39;Mojang&#39;,
+        &#39;Myelin Media&#39;, &#39;NEC&#39;, &#39;NEC Interchannel&#39;, &#39;Namco Bandai Games&#39;,
+        &#39;NewKidCo&#39;, &#39;Nintendo&#39;, &#39;Nippon Ichi Software&#39;, &#39;Nordic Games&#39;,
+        &#39;O-Games&#39;, &#39;Oxygen Interactive&#39;, &#39;P2 Games&#39;, &#39;PQube&#39;, &#39;Phenomedia&#39;,
+        &#39;PlayV&#39;, &#39;PopCap Games&#39;, &#39;Red Storm Entertainment&#39;,
+        &#39;Reef Entertainment&#39;, &#39;Rising Star Games&#39;, &#39;Riverhillsoft&#39;,
+        &#39;Rondomedia&#39;, &#39;SCi&#39;, &#39;SSI&#39;, &#39;Sammy Corporation&#39;, &#39;Sega&#39;,
+        &#39;Shogakukan&#39;, &#39;Sony Computer Entertainment&#39;, &#39;SouthPeak Games&#39;,
+        &#39;Spike&#39;, &#39;Square&#39;, &#39;Square Enix&#39;, &#39;SquareSoft&#39;, &#39;Storm City Games&#39;,
+        &#39;System 3&#39;, &#39;TDK Mediactive&#39;, &#39;THQ&#39;, &#39;Taito&#39;, &#39;Takara&#39;,
+        &#39;Take-Two Interactive&#39;, &#39;Tecmo Koei&#39;, &#39;Telegames&#39;,
+        &#39;Telltale Games&#39;, &#39;U.S. Gold&#39;, &#39;Ubisoft&#39;, &#39;Ubisoft Annecy&#39;,
+        &#39;Universal Interactive&#39;, &#39;Unknown&#39;, &#39;Vir2L Studios&#39;,
+        &#39;Virgin Interactive&#39;, &#39;Vivendi Games&#39;,
+        &#39;Warner Bros. Interactive Entertainment&#39;, &#39;Xplosiv&#39;,
+        &#39;Zoo Digital Publishing&#39;, &#39;bitComposer Games&#39;, nan], dtype=object)]</pre>
 </div>
 
 </div>
@@ -16203,7 +15718,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Обратимся к столбцам датасета и через функцию fit_transform, заменим словосочетания на цифры. Исходя из этого результата можно понять, что все правильно и Albury находится под 3 номером, но тк счет идет с 0, переменная записалась под 2.</p>
+<p>Обратимся к столбцам датасета и через функцию fit_transform, заменим словосочетания на цифры. Исходя из этого результата можно понять, что все правильно и DS находится под 3 номером, но тк счет идет с 0, переменная записалась под 2.</p>
 
 </div>
 </div>
@@ -16217,7 +15732,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Oenc</span> <span class="o">=</span> <span class="n">OrdinalEncoder</span><span class="p">()</span>
-<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Location&#39;</span><span class="p">,</span><span class="s1">&#39;WindGustDir&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Oenc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Location&#39;</span><span class="p">,</span><span class="s1">&#39;WindGustDir&#39;</span><span class="p">]])</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Platform&#39;</span><span class="p">,</span><span class="s1">&#39;Publisher&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Oenc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Platform&#39;</span><span class="p">,</span><span class="s1">&#39;Publisher&#39;</span><span class="p">]])</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -16257,131 +15772,89 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Location</th>
-      <th>MinTemp</th>
-      <th>MaxTemp</th>
-      <th>Rainfall</th>
-      <th>WindGustDir</th>
-      <th>WindGustSpeed</th>
-      <th>WindDir9am</th>
-      <th>WindDir3pm</th>
-      <th>WindSpeed9am</th>
-      <th>WindSpeed3pm</th>
-      <th>Humidity9am</th>
-      <th>Humidity3pm</th>
-      <th>Pressure9am</th>
-      <th>Pressure3pm</th>
-      <th>Temp9am</th>
-      <th>Temp3pm</th>
-      <th>RainToday</th>
-      <th>RainTomorrow</th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Publisher</th>
+      <th>NA_Sales</th>
+      <th>EU_Sales</th>
+      <th>JP_Sales</th>
+      <th>Other_Sales</th>
+      <th>Global_Sales</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2.0</td>
-      <td>13.4</td>
-      <td>22.9</td>
-      <td>0.6</td>
-      <td>14.0</td>
-      <td>44.0</td>
-      <td>W</td>
-      <td>WNW</td>
-      <td>20.0</td>
-      <td>24.0</td>
-      <td>71.0</td>
-      <td>22.0</td>
-      <td>1007.7</td>
-      <td>1007.1</td>
-      <td>16.9</td>
-      <td>21.8</td>
-      <td>No</td>
-      <td>No</td>
+      <td>7164</td>
+      <td>Discovery Kids: Dolphin Discovery</td>
+      <td>3.0</td>
+      <td>2008.0</td>
+      <td>Simulation</td>
+      <td>1.0</td>
+      <td>0.21</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>0.22</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.0</td>
-      <td>7.4</td>
-      <td>25.1</td>
-      <td>0.0</td>
-      <td>15.0</td>
-      <td>44.0</td>
-      <td>NNW</td>
-      <td>WSW</td>
-      <td>4.0</td>
-      <td>22.0</td>
-      <td>44.0</td>
-      <td>25.0</td>
-      <td>1010.6</td>
-      <td>1007.8</td>
-      <td>17.2</td>
-      <td>24.3</td>
-      <td>No</td>
-      <td>No</td>
+      <td>15834</td>
+      <td>LifeSigns: Surgical Unit</td>
+      <td>3.0</td>
+      <td>2005.0</td>
+      <td>Simulation</td>
+      <td>69.0</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.02</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2.0</td>
-      <td>12.9</td>
-      <td>25.7</td>
-      <td>0.0</td>
-      <td>16.0</td>
-      <td>46.0</td>
-      <td>W</td>
-      <td>WSW</td>
-      <td>19.0</td>
-      <td>26.0</td>
-      <td>38.0</td>
-      <td>30.0</td>
-      <td>1007.6</td>
-      <td>1008.7</td>
-      <td>21.0</td>
-      <td>23.2</td>
-      <td>No</td>
-      <td>No</td>
+      <td>11539</td>
+      <td>Sengoku Musou 3: Moushouden</td>
+      <td>20.0</td>
+      <td>2011.0</td>
+      <td>Action</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
+      <td>0.00</td>
+      <td>0.08</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2.0</td>
-      <td>9.2</td>
-      <td>28.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>24.0</td>
-      <td>SE</td>
-      <td>E</td>
-      <td>11.0</td>
-      <td>9.0</td>
-      <td>45.0</td>
-      <td>16.0</td>
-      <td>1017.6</td>
-      <td>1012.8</td>
-      <td>18.1</td>
-      <td>26.5</td>
-      <td>No</td>
-      <td>No</td>
+      <td>593</td>
+      <td>LittleBigPlanet</td>
+      <td>15.0</td>
+      <td>2009.0</td>
+      <td>Platform</td>
+      <td>115.0</td>
+      <td>0.64</td>
+      <td>1.24</td>
+      <td>0.01</td>
+      <td>0.69</td>
+      <td>2.58</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2.0</td>
-      <td>17.5</td>
-      <td>32.3</td>
-      <td>1.0</td>
-      <td>14.0</td>
-      <td>41.0</td>
-      <td>ENE</td>
-      <td>NW</td>
-      <td>7.0</td>
-      <td>20.0</td>
-      <td>82.0</td>
-      <td>33.0</td>
-      <td>1010.8</td>
-      <td>1006.0</td>
-      <td>17.8</td>
-      <td>29.7</td>
-      <td>No</td>
-      <td>No</td>
+      <td>12211</td>
+      <td>Yoake Yori Ruriiro na: Brighter than Dawning Blue</td>
+      <td>12.0</td>
+      <td>2006.0</td>
+      <td>Adventure</td>
+      <td>12.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.07</td>
     </tr>
     <tr>
       <th>...</th>
@@ -16396,122 +15869,80 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>140782</th>
-      <td>41.0</td>
-      <td>3.5</td>
-      <td>21.8</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>31.0</td>
-      <td>ESE</td>
-      <td>E</td>
-      <td>15.0</td>
-      <td>13.0</td>
-      <td>59.0</td>
-      <td>27.0</td>
-      <td>1024.7</td>
-      <td>1021.2</td>
-      <td>9.4</td>
-      <td>20.9</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>140783</th>
-      <td>41.0</td>
-      <td>2.8</td>
-      <td>23.4</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>31.0</td>
-      <td>SE</td>
-      <td>ENE</td>
-      <td>13.0</td>
-      <td>11.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1024.6</td>
-      <td>1020.3</td>
-      <td>10.1</td>
-      <td>22.4</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>140784</th>
-      <td>41.0</td>
-      <td>3.6</td>
-      <td>25.3</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>22.0</td>
-      <td>SE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>9.0</td>
-      <td>56.0</td>
-      <td>21.0</td>
-      <td>1023.5</td>
-      <td>1019.1</td>
-      <td>10.9</td>
-      <td>24.5</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>140785</th>
-      <td>41.0</td>
-      <td>5.4</td>
-      <td>26.9</td>
-      <td>0.0</td>
+      <th>548</th>
+      <td>4537</td>
+      <td>Castlevania: Portrait of Ruin</td>
       <td>3.0</td>
-      <td>37.0</td>
-      <td>SE</td>
-      <td>WNW</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>53.0</td>
-      <td>24.0</td>
-      <td>1021.0</td>
-      <td>1016.8</td>
-      <td>12.5</td>
-      <td>26.1</td>
-      <td>No</td>
-      <td>No</td>
+      <td>2006.0</td>
+      <td>Platform</td>
+      <td>74.0</td>
+      <td>0.33</td>
+      <td>0.03</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.43</td>
     </tr>
     <tr>
-      <th>140786</th>
-      <td>41.0</td>
-      <td>7.8</td>
-      <td>27.0</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>28.0</td>
-      <td>SSE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>7.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1019.4</td>
-      <td>1016.5</td>
-      <td>15.1</td>
-      <td>26.0</td>
-      <td>No</td>
-      <td>No</td>
+      <th>549</th>
+      <td>11524</td>
+      <td>Puzzler Mind Gym 3D</td>
+      <td>1.0</td>
+      <td>2011.0</td>
+      <td>Puzzle</td>
+      <td>132.0</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>550</th>
+      <td>1366</td>
+      <td>Inazuma Eleven 2</td>
+      <td>3.0</td>
+      <td>2009.0</td>
+      <td>Role-Playing</td>
+      <td>95.0</td>
+      <td>0.00</td>
+      <td>0.21</td>
+      <td>1.18</td>
+      <td>0.03</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>551</th>
+      <td>4135</td>
+      <td>Tomb Raider: Underworld</td>
+      <td>20.0</td>
+      <td>2008.0</td>
+      <td>Action</td>
+      <td>37.0</td>
+      <td>0.14</td>
+      <td>0.28</td>
+      <td>0.00</td>
+      <td>0.06</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <th>552</th>
+      <td>3828</td>
+      <td>GT Pro Series</td>
+      <td>20.0</td>
+      <td>2006.0</td>
+      <td>Racing</td>
+      <td>132.0</td>
+      <td>0.46</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>0.04</td>
+      <td>0.52</td>
     </tr>
   </tbody>
 </table>
-<p>140787 rows × 18 columns</p>
+<p>553 rows × 11 columns</p>
 </div>
 </div>
 
@@ -16544,8 +15975,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
 <span class="n">Lenc</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
-<span class="n">Lenc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;RainTomorrow&#39;</span><span class="p">])</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;RainTomorrow&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Lenc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;RainTomorrow&#39;</span><span class="p">])</span>
+<span class="n">Lenc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Genre&#39;</span><span class="p">])</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Genre&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Lenc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Genre&#39;</span><span class="p">])</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -16585,131 +16016,89 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Location</th>
-      <th>MinTemp</th>
-      <th>MaxTemp</th>
-      <th>Rainfall</th>
-      <th>WindGustDir</th>
-      <th>WindGustSpeed</th>
-      <th>WindDir9am</th>
-      <th>WindDir3pm</th>
-      <th>WindSpeed9am</th>
-      <th>WindSpeed3pm</th>
-      <th>Humidity9am</th>
-      <th>Humidity3pm</th>
-      <th>Pressure9am</th>
-      <th>Pressure3pm</th>
-      <th>Temp9am</th>
-      <th>Temp3pm</th>
-      <th>RainToday</th>
-      <th>RainTomorrow</th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Publisher</th>
+      <th>NA_Sales</th>
+      <th>EU_Sales</th>
+      <th>JP_Sales</th>
+      <th>Other_Sales</th>
+      <th>Global_Sales</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2.0</td>
-      <td>13.4</td>
-      <td>22.9</td>
-      <td>0.6</td>
-      <td>14.0</td>
-      <td>44.0</td>
-      <td>W</td>
-      <td>WNW</td>
-      <td>20.0</td>
-      <td>24.0</td>
-      <td>71.0</td>
-      <td>22.0</td>
-      <td>1007.7</td>
-      <td>1007.1</td>
-      <td>16.9</td>
-      <td>21.8</td>
-      <td>No</td>
-      <td>0</td>
+      <td>7164</td>
+      <td>Discovery Kids: Dolphin Discovery</td>
+      <td>3.0</td>
+      <td>2008.0</td>
+      <td>9</td>
+      <td>1.0</td>
+      <td>0.21</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>0.22</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.0</td>
-      <td>7.4</td>
-      <td>25.1</td>
-      <td>0.0</td>
-      <td>15.0</td>
-      <td>44.0</td>
-      <td>NNW</td>
-      <td>WSW</td>
-      <td>4.0</td>
-      <td>22.0</td>
-      <td>44.0</td>
-      <td>25.0</td>
-      <td>1010.6</td>
-      <td>1007.8</td>
-      <td>17.2</td>
-      <td>24.3</td>
-      <td>No</td>
-      <td>0</td>
+      <td>15834</td>
+      <td>LifeSigns: Surgical Unit</td>
+      <td>3.0</td>
+      <td>2005.0</td>
+      <td>9</td>
+      <td>69.0</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.02</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2.0</td>
-      <td>12.9</td>
-      <td>25.7</td>
-      <td>0.0</td>
-      <td>16.0</td>
-      <td>46.0</td>
-      <td>W</td>
-      <td>WSW</td>
-      <td>19.0</td>
-      <td>26.0</td>
-      <td>38.0</td>
-      <td>30.0</td>
-      <td>1007.6</td>
-      <td>1008.7</td>
-      <td>21.0</td>
-      <td>23.2</td>
-      <td>No</td>
+      <td>11539</td>
+      <td>Sengoku Musou 3: Moushouden</td>
+      <td>20.0</td>
+      <td>2011.0</td>
       <td>0</td>
+      <td>5.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
+      <td>0.00</td>
+      <td>0.08</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2.0</td>
-      <td>9.2</td>
-      <td>28.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>24.0</td>
-      <td>SE</td>
-      <td>E</td>
-      <td>11.0</td>
-      <td>9.0</td>
-      <td>45.0</td>
-      <td>16.0</td>
-      <td>1017.6</td>
-      <td>1012.8</td>
-      <td>18.1</td>
-      <td>26.5</td>
-      <td>No</td>
-      <td>0</td>
+      <td>593</td>
+      <td>LittleBigPlanet</td>
+      <td>15.0</td>
+      <td>2009.0</td>
+      <td>4</td>
+      <td>115.0</td>
+      <td>0.64</td>
+      <td>1.24</td>
+      <td>0.01</td>
+      <td>0.69</td>
+      <td>2.58</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2.0</td>
-      <td>17.5</td>
-      <td>32.3</td>
-      <td>1.0</td>
-      <td>14.0</td>
-      <td>41.0</td>
-      <td>ENE</td>
-      <td>NW</td>
-      <td>7.0</td>
-      <td>20.0</td>
-      <td>82.0</td>
-      <td>33.0</td>
-      <td>1010.8</td>
-      <td>1006.0</td>
-      <td>17.8</td>
-      <td>29.7</td>
-      <td>No</td>
-      <td>0</td>
+      <td>12211</td>
+      <td>Yoake Yori Ruriiro na: Brighter than Dawning Blue</td>
+      <td>12.0</td>
+      <td>2006.0</td>
+      <td>1</td>
+      <td>12.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.07</td>
     </tr>
     <tr>
       <th>...</th>
@@ -16724,122 +16113,80 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>140782</th>
-      <td>41.0</td>
-      <td>3.5</td>
-      <td>21.8</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>31.0</td>
-      <td>ESE</td>
-      <td>E</td>
-      <td>15.0</td>
-      <td>13.0</td>
-      <td>59.0</td>
-      <td>27.0</td>
-      <td>1024.7</td>
-      <td>1021.2</td>
-      <td>9.4</td>
-      <td>20.9</td>
-      <td>No</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>140783</th>
-      <td>41.0</td>
-      <td>2.8</td>
-      <td>23.4</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>31.0</td>
-      <td>SE</td>
-      <td>ENE</td>
-      <td>13.0</td>
-      <td>11.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1024.6</td>
-      <td>1020.3</td>
-      <td>10.1</td>
-      <td>22.4</td>
-      <td>No</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>140784</th>
-      <td>41.0</td>
-      <td>3.6</td>
-      <td>25.3</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>22.0</td>
-      <td>SE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>9.0</td>
-      <td>56.0</td>
-      <td>21.0</td>
-      <td>1023.5</td>
-      <td>1019.1</td>
-      <td>10.9</td>
-      <td>24.5</td>
-      <td>No</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>140785</th>
-      <td>41.0</td>
-      <td>5.4</td>
-      <td>26.9</td>
-      <td>0.0</td>
+      <th>548</th>
+      <td>4537</td>
+      <td>Castlevania: Portrait of Ruin</td>
       <td>3.0</td>
-      <td>37.0</td>
-      <td>SE</td>
-      <td>WNW</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>53.0</td>
-      <td>24.0</td>
-      <td>1021.0</td>
-      <td>1016.8</td>
-      <td>12.5</td>
-      <td>26.1</td>
-      <td>No</td>
-      <td>0</td>
+      <td>2006.0</td>
+      <td>4</td>
+      <td>74.0</td>
+      <td>0.33</td>
+      <td>0.03</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.43</td>
     </tr>
     <tr>
-      <th>140786</th>
-      <td>41.0</td>
-      <td>7.8</td>
-      <td>27.0</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>28.0</td>
-      <td>SSE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>7.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>1019.4</td>
-      <td>1016.5</td>
-      <td>15.1</td>
-      <td>26.0</td>
-      <td>No</td>
+      <th>549</th>
+      <td>11524</td>
+      <td>Puzzler Mind Gym 3D</td>
+      <td>1.0</td>
+      <td>2011.0</td>
+      <td>5</td>
+      <td>132.0</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>550</th>
+      <td>1366</td>
+      <td>Inazuma Eleven 2</td>
+      <td>3.0</td>
+      <td>2009.0</td>
+      <td>7</td>
+      <td>95.0</td>
+      <td>0.00</td>
+      <td>0.21</td>
+      <td>1.18</td>
+      <td>0.03</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>551</th>
+      <td>4135</td>
+      <td>Tomb Raider: Underworld</td>
+      <td>20.0</td>
+      <td>2008.0</td>
       <td>0</td>
+      <td>37.0</td>
+      <td>0.14</td>
+      <td>0.28</td>
+      <td>0.00</td>
+      <td>0.06</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <th>552</th>
+      <td>3828</td>
+      <td>GT Pro Series</td>
+      <td>20.0</td>
+      <td>2006.0</td>
+      <td>6</td>
+      <td>132.0</td>
+      <td>0.46</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>0.04</td>
+      <td>0.52</td>
     </tr>
   </tbody>
 </table>
-<p>140787 rows × 18 columns</p>
+<p>553 rows × 11 columns</p>
 </div>
 </div>
 
@@ -16891,7 +16238,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([&#39;No&#39;, &#39;Yes&#39;], dtype=object)</pre>
+<pre>array([&#39;Action&#39;, &#39;Adventure&#39;, &#39;Fighting&#39;, &#39;Misc&#39;, &#39;Platform&#39;, &#39;Puzzle&#39;,
+       &#39;Racing&#39;, &#39;Role-Playing&#39;, &#39;Shooter&#39;, &#39;Simulation&#39;, &#39;Sports&#39;,
+       &#39;Strategy&#39;], dtype=object)</pre>
 </div>
 
 </div>
@@ -16927,7 +16276,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <span class="n">Norm</span> <span class="o">=</span> <span class="n">Normalizer</span><span class="p">()</span>
 
-<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Pressure9am&#39;</span><span class="p">,</span> <span class="s1">&#39;Pressure3pm&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Norm</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Pressure9am&#39;</span><span class="p">,</span> <span class="s1">&#39;Pressure3pm&#39;</span><span class="p">]])</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;NA_Sales&#39;</span><span class="p">,</span> <span class="s1">&#39;EU_Sales&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Norm</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;NA_Sales&#39;</span><span class="p">,</span> <span class="s1">&#39;EU_Sales&#39;</span><span class="p">]])</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -16967,131 +16316,89 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Location</th>
-      <th>MinTemp</th>
-      <th>MaxTemp</th>
-      <th>Rainfall</th>
-      <th>WindGustDir</th>
-      <th>WindGustSpeed</th>
-      <th>WindDir9am</th>
-      <th>WindDir3pm</th>
-      <th>WindSpeed9am</th>
-      <th>WindSpeed3pm</th>
-      <th>Humidity9am</th>
-      <th>Humidity3pm</th>
-      <th>Pressure9am</th>
-      <th>Pressure3pm</th>
-      <th>Temp9am</th>
-      <th>Temp3pm</th>
-      <th>RainToday</th>
-      <th>RainTomorrow</th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Publisher</th>
+      <th>NA_Sales</th>
+      <th>EU_Sales</th>
+      <th>JP_Sales</th>
+      <th>Other_Sales</th>
+      <th>Global_Sales</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2.0</td>
-      <td>13.4</td>
-      <td>22.9</td>
-      <td>0.6</td>
-      <td>14.0</td>
-      <td>44.0</td>
-      <td>W</td>
-      <td>WNW</td>
-      <td>20.0</td>
-      <td>24.0</td>
-      <td>71.0</td>
-      <td>22.0</td>
-      <td>0.707317</td>
-      <td>0.706896</td>
-      <td>16.9</td>
-      <td>21.8</td>
-      <td>No</td>
-      <td>0</td>
+      <td>7164</td>
+      <td>Discovery Kids: Dolphin Discovery</td>
+      <td>3.0</td>
+      <td>2008.0</td>
+      <td>9</td>
+      <td>1.0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>0.22</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.0</td>
-      <td>7.4</td>
-      <td>25.1</td>
-      <td>0.0</td>
-      <td>15.0</td>
-      <td>44.0</td>
-      <td>NNW</td>
-      <td>WSW</td>
-      <td>4.0</td>
-      <td>22.0</td>
-      <td>44.0</td>
-      <td>25.0</td>
-      <td>0.708087</td>
-      <td>0.706125</td>
-      <td>17.2</td>
-      <td>24.3</td>
-      <td>No</td>
-      <td>0</td>
+      <td>15834</td>
+      <td>LifeSigns: Surgical Unit</td>
+      <td>3.0</td>
+      <td>2005.0</td>
+      <td>9</td>
+      <td>69.0</td>
+      <td>0.707107</td>
+      <td>0.707107</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.02</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2.0</td>
-      <td>12.9</td>
-      <td>25.7</td>
-      <td>0.0</td>
-      <td>16.0</td>
-      <td>46.0</td>
-      <td>W</td>
-      <td>WSW</td>
-      <td>19.0</td>
-      <td>26.0</td>
-      <td>38.0</td>
-      <td>30.0</td>
-      <td>0.706721</td>
-      <td>0.707492</td>
-      <td>21.0</td>
-      <td>23.2</td>
-      <td>No</td>
+      <td>11539</td>
+      <td>Sengoku Musou 3: Moushouden</td>
+      <td>20.0</td>
+      <td>2011.0</td>
       <td>0</td>
+      <td>5.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.08</td>
+      <td>0.00</td>
+      <td>0.08</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2.0</td>
-      <td>9.2</td>
-      <td>28.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>24.0</td>
-      <td>SE</td>
-      <td>E</td>
-      <td>11.0</td>
-      <td>9.0</td>
-      <td>45.0</td>
-      <td>16.0</td>
-      <td>0.708776</td>
-      <td>0.705433</td>
-      <td>18.1</td>
-      <td>26.5</td>
-      <td>No</td>
-      <td>0</td>
+      <td>593</td>
+      <td>LittleBigPlanet</td>
+      <td>15.0</td>
+      <td>2009.0</td>
+      <td>4</td>
+      <td>115.0</td>
+      <td>0.458643</td>
+      <td>0.888621</td>
+      <td>0.01</td>
+      <td>0.69</td>
+      <td>2.58</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2.0</td>
-      <td>17.5</td>
-      <td>32.3</td>
-      <td>1.0</td>
-      <td>14.0</td>
-      <td>41.0</td>
-      <td>ENE</td>
-      <td>NW</td>
-      <td>7.0</td>
-      <td>20.0</td>
-      <td>82.0</td>
-      <td>33.0</td>
-      <td>0.708788</td>
-      <td>0.705422</td>
-      <td>17.8</td>
-      <td>29.7</td>
-      <td>No</td>
-      <td>0</td>
+      <td>12211</td>
+      <td>Yoake Yori Ruriiro na: Brighter than Dawning Blue</td>
+      <td>12.0</td>
+      <td>2006.0</td>
+      <td>1</td>
+      <td>12.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.07</td>
     </tr>
     <tr>
       <th>...</th>
@@ -17106,122 +16413,80 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>140782</th>
-      <td>41.0</td>
-      <td>3.5</td>
-      <td>21.8</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>31.0</td>
-      <td>ESE</td>
-      <td>E</td>
-      <td>15.0</td>
-      <td>13.0</td>
-      <td>59.0</td>
-      <td>27.0</td>
-      <td>0.708315</td>
-      <td>0.705896</td>
-      <td>9.4</td>
-      <td>20.9</td>
-      <td>No</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>140783</th>
-      <td>41.0</td>
-      <td>2.8</td>
-      <td>23.4</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>31.0</td>
-      <td>SE</td>
-      <td>ENE</td>
-      <td>13.0</td>
-      <td>11.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>0.708592</td>
-      <td>0.705618</td>
-      <td>10.1</td>
-      <td>22.4</td>
-      <td>No</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>140784</th>
-      <td>41.0</td>
-      <td>3.6</td>
-      <td>25.3</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>22.0</td>
-      <td>SE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>9.0</td>
-      <td>56.0</td>
-      <td>21.0</td>
-      <td>0.708628</td>
-      <td>0.705582</td>
-      <td>10.9</td>
-      <td>24.5</td>
-      <td>No</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>140785</th>
-      <td>41.0</td>
-      <td>5.4</td>
-      <td>26.9</td>
-      <td>0.0</td>
+      <th>548</th>
+      <td>4537</td>
+      <td>Castlevania: Portrait of Ruin</td>
       <td>3.0</td>
-      <td>37.0</td>
-      <td>SE</td>
-      <td>WNW</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>53.0</td>
-      <td>24.0</td>
-      <td>0.708563</td>
-      <td>0.705648</td>
-      <td>12.5</td>
-      <td>26.1</td>
-      <td>No</td>
-      <td>0</td>
+      <td>2006.0</td>
+      <td>4</td>
+      <td>74.0</td>
+      <td>0.995893</td>
+      <td>0.090536</td>
+      <td>0.04</td>
+      <td>0.03</td>
+      <td>0.43</td>
     </tr>
     <tr>
-      <th>140786</th>
-      <td>41.0</td>
-      <td>7.8</td>
-      <td>27.0</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>28.0</td>
-      <td>SSE</td>
-      <td>N</td>
-      <td>13.0</td>
-      <td>7.0</td>
-      <td>51.0</td>
-      <td>24.0</td>
-      <td>0.708113</td>
-      <td>0.706099</td>
-      <td>15.1</td>
-      <td>26.0</td>
-      <td>No</td>
+      <th>549</th>
+      <td>11524</td>
+      <td>Puzzler Mind Gym 3D</td>
+      <td>1.0</td>
+      <td>2011.0</td>
+      <td>5</td>
+      <td>132.0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>550</th>
+      <td>1366</td>
+      <td>Inazuma Eleven 2</td>
+      <td>3.0</td>
+      <td>2009.0</td>
+      <td>7</td>
+      <td>95.0</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>1.18</td>
+      <td>0.03</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>551</th>
+      <td>4135</td>
+      <td>Tomb Raider: Underworld</td>
+      <td>20.0</td>
+      <td>2008.0</td>
       <td>0</td>
+      <td>37.0</td>
+      <td>0.447214</td>
+      <td>0.894427</td>
+      <td>0.00</td>
+      <td>0.06</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <th>552</th>
+      <td>3828</td>
+      <td>GT Pro Series</td>
+      <td>20.0</td>
+      <td>2006.0</td>
+      <td>6</td>
+      <td>132.0</td>
+      <td>0.999764</td>
+      <td>0.021734</td>
+      <td>0.02</td>
+      <td>0.04</td>
+      <td>0.52</td>
     </tr>
   </tbody>
 </table>
-<p>140787 rows × 18 columns</p>
+<p>553 rows × 11 columns</p>
 </div>
 </div>
 
@@ -17258,8 +16523,8 @@ test_size - значение с плавающей точкой.
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 
-<span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;RainTomorrow&#39;</span><span class="p">]</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;RainTomorrow&#39;</span><span class="p">])</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Global_Sales&#39;</span><span class="p">])</span>
 
 <span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 </pre></div>
@@ -17316,125 +16581,83 @@ test_size - значение с плавающей точкой.
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Location</th>
-      <th>MinTemp</th>
-      <th>MaxTemp</th>
-      <th>Rainfall</th>
-      <th>WindGustDir</th>
-      <th>WindGustSpeed</th>
-      <th>WindDir9am</th>
-      <th>WindDir3pm</th>
-      <th>WindSpeed9am</th>
-      <th>WindSpeed3pm</th>
-      <th>Humidity9am</th>
-      <th>Humidity3pm</th>
-      <th>Pressure9am</th>
-      <th>Pressure3pm</th>
-      <th>Temp9am</th>
-      <th>Temp3pm</th>
-      <th>RainToday</th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Publisher</th>
+      <th>NA_Sales</th>
+      <th>EU_Sales</th>
+      <th>JP_Sales</th>
+      <th>Other_Sales</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>119008</th>
-      <td>31.0</td>
-      <td>13.5</td>
-      <td>26.0</td>
-      <td>0.0</td>
-      <td>12.0</td>
-      <td>33.0</td>
-      <td>ENE</td>
-      <td>SW</td>
-      <td>7.0</td>
-      <td>17.0</td>
-      <td>52.0</td>
-      <td>48.0</td>
-      <td>0.707975</td>
-      <td>0.706238</td>
-      <td>21.4</td>
-      <td>24.8</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>68281</th>
-      <td>20.0</td>
-      <td>16.0</td>
-      <td>30.0</td>
-      <td>0.0</td>
-      <td>3.0</td>
-      <td>43.0</td>
-      <td>N</td>
-      <td>N</td>
-      <td>31.0</td>
-      <td>11.0</td>
-      <td>24.0</td>
-      <td>22.0</td>
-      <td>0.707695</td>
-      <td>0.706518</td>
-      <td>25.6</td>
-      <td>29.8</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>42953</th>
-      <td>47.0</td>
-      <td>19.0</td>
-      <td>26.3</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>41.0</td>
-      <td>NNW</td>
-      <td>NNE</td>
-      <td>7.0</td>
-      <td>15.0</td>
-      <td>85.0</td>
-      <td>79.0</td>
-      <td>0.708429</td>
-      <td>0.705782</td>
-      <td>21.8</td>
-      <td>24.4</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>91339</th>
-      <td>39.0</td>
-      <td>14.7</td>
-      <td>27.2</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>50.0</td>
-      <td>SSW</td>
-      <td>E</td>
+      <th>18</th>
+      <td>4889</td>
+      <td>Dungeon Siege III</td>
       <td>13.0</td>
-      <td>22.0</td>
-      <td>48.0</td>
-      <td>47.0</td>
-      <td>0.707904</td>
-      <td>0.706309</td>
-      <td>21.7</td>
-      <td>25.8</td>
-      <td>No</td>
+      <td>2011.0</td>
+      <td>7</td>
+      <td>119.0</td>
+      <td>0.771930</td>
+      <td>0.635707</td>
+      <td>0.03</td>
+      <td>0.06</td>
     </tr>
     <tr>
-      <th>26428</th>
-      <td>34.0</td>
-      <td>5.7</td>
-      <td>15.5</td>
-      <td>0.0</td>
-      <td>2.0</td>
-      <td>11.0</td>
-      <td>Unknown</td>
-      <td>WSW</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>99.0</td>
-      <td>63.0</td>
-      <td>0.708230</td>
-      <td>0.705982</td>
-      <td>8.8</td>
+      <th>325</th>
+      <td>13561</td>
+      <td>428: Fuusa Sareta Shibuya de</td>
       <td>15.0</td>
-      <td>No</td>
+      <td>2009.0</td>
+      <td>1</td>
+      <td>117.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.04</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>486</th>
+      <td>3877</td>
+      <td>Jampack Winter 2002</td>
+      <td>12.0</td>
+      <td>2002.0</td>
+      <td>3</td>
+      <td>115.0</td>
+      <td>0.780869</td>
+      <td>0.624695</td>
+      <td>0.00</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <th>296</th>
+      <td>12660</td>
+      <td>Warriors: Legends of Troy</td>
+      <td>22.0</td>
+      <td>2011.0</td>
+      <td>0</td>
+      <td>128.0</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>478</th>
+      <td>12706</td>
+      <td>Blade Dancer: Lineage of Light</td>
+      <td>15.0</td>
+      <td>2006.0</td>
+      <td>7</td>
+      <td>16.0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.00</td>
     </tr>
     <tr>
       <th>...</th>
@@ -17448,117 +16671,75 @@ test_size - значение с плавающей точкой.
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>110268</th>
-      <td>46.0</td>
-      <td>15.4</td>
-      <td>24.8</td>
-      <td>0.0</td>
-      <td>10.0</td>
-      <td>48.0</td>
-      <td>SSE</td>
-      <td>SSE</td>
-      <td>26.0</td>
-      <td>30.0</td>
-      <td>68.0</td>
-      <td>58.0</td>
-      <td>0.707454</td>
-      <td>0.706759</td>
-      <td>21.2</td>
-      <td>22.2</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>119879</th>
-      <td>36.0</td>
-      <td>3.2</td>
-      <td>15.5</td>
-      <td>9.2</td>
+      <th>71</th>
+      <td>10727</td>
+      <td>The Land Before Time: Great Valley Racing Adve...</td>
       <td>11.0</td>
-      <td>43.0</td>
-      <td>SSW</td>
-      <td>SSW</td>
-      <td>15.0</td>
-      <td>26.0</td>
-      <td>72.0</td>
-      <td>75.0</td>
-      <td>0.707940</td>
-      <td>0.706273</td>
-      <td>12.1</td>
-      <td>11.6</td>
-      <td>Yes</td>
+      <td>2001.0</td>
+      <td>6</td>
+      <td>123.0</td>
+      <td>0.780869</td>
+      <td>0.624695</td>
+      <td>0.00</td>
+      <td>0.01</td>
     </tr>
     <tr>
-      <th>103694</th>
-      <td>48.0</td>
-      <td>11.7</td>
-      <td>23.6</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>37.0</td>
-      <td>S</td>
-      <td>SE</td>
-      <td>22.0</td>
-      <td>22.0</td>
-      <td>71.0</td>
-      <td>34.0</td>
-      <td>0.708287</td>
-      <td>0.705924</td>
-      <td>15.6</td>
-      <td>23.4</td>
-      <td>No</td>
+      <th>106</th>
+      <td>4516</td>
+      <td>MLB 2002</td>
+      <td>11.0</td>
+      <td>2001.0</td>
+      <td>10</td>
+      <td>115.0</td>
+      <td>0.832050</td>
+      <td>0.554700</td>
+      <td>0.00</td>
+      <td>0.03</td>
     </tr>
     <tr>
-      <th>131932</th>
+      <th>270</th>
+      <td>1216</td>
+      <td>Disney Fairies: Tinker Bell</td>
       <td>3.0</td>
-      <td>20.2</td>
-      <td>34.5</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>37.0</td>
-      <td>ESE</td>
-      <td>ESE</td>
-      <td>26.0</td>
-      <td>17.0</td>
-      <td>44.0</td>
-      <td>24.0</td>
-      <td>0.708260</td>
-      <td>0.705952</td>
-      <td>26.2</td>
-      <td>33.6</td>
-      <td>No</td>
+      <td>2008.0</td>
+      <td>1</td>
+      <td>36.0</td>
+      <td>0.855732</td>
+      <td>0.517419</td>
+      <td>0.01</td>
+      <td>0.15</td>
     </tr>
     <tr>
-      <th>121958</th>
-      <td>36.0</td>
-      <td>11.9</td>
-      <td>23.0</td>
-      <td>3.8</td>
-      <td>11.0</td>
-      <td>50.0</td>
-      <td>E</td>
-      <td>SSW</td>
-      <td>9.0</td>
-      <td>26.0</td>
-      <td>84.0</td>
-      <td>68.0</td>
-      <td>0.707940</td>
-      <td>0.706273</td>
-      <td>17.0</td>
-      <td>19.7</td>
-      <td>Yes</td>
+      <th>435</th>
+      <td>1403</td>
+      <td>Paper Mario</td>
+      <td>8.0</td>
+      <td>2000.0</td>
+      <td>7</td>
+      <td>95.0</td>
+      <td>0.955064</td>
+      <td>0.296399</td>
+      <td>0.59</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>10747</td>
+      <td>Rapala Pro Bass Fishing 2010</td>
+      <td>3.0</td>
+      <td>2010.0</td>
+      <td>10</td>
+      <td>6.0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.01</td>
     </tr>
   </tbody>
 </table>
-<p>112629 rows × 17 columns</p>
+<p>442 rows × 10 columns</p>
 </div>
 </div>
 
@@ -17615,125 +16796,83 @@ test_size - значение с плавающей точкой.
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Location</th>
-      <th>MinTemp</th>
-      <th>MaxTemp</th>
-      <th>Rainfall</th>
-      <th>WindGustDir</th>
-      <th>WindGustSpeed</th>
-      <th>WindDir9am</th>
-      <th>WindDir3pm</th>
-      <th>WindSpeed9am</th>
-      <th>WindSpeed3pm</th>
-      <th>Humidity9am</th>
-      <th>Humidity3pm</th>
-      <th>Pressure9am</th>
-      <th>Pressure3pm</th>
-      <th>Temp9am</th>
-      <th>Temp3pm</th>
-      <th>RainToday</th>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Publisher</th>
+      <th>NA_Sales</th>
+      <th>EU_Sales</th>
+      <th>JP_Sales</th>
+      <th>Other_Sales</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>117237</th>
-      <td>31.0</td>
-      <td>18.2</td>
-      <td>25.0</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>33.00000</td>
-      <td>SE</td>
-      <td>SE</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>41.0</td>
-      <td>34.0</td>
-      <td>0.707631</td>
-      <td>0.706582</td>
-      <td>19.2</td>
-      <td>24.4</td>
-      <td>No</td>
+      <th>548</th>
+      <td>4537</td>
+      <td>Castlevania: Portrait of Ruin</td>
+      <td>3.0</td>
+      <td>2006.0</td>
+      <td>4</td>
+      <td>74.0</td>
+      <td>0.995893</td>
+      <td>0.090536</td>
+      <td>0.04</td>
+      <td>0.03</td>
     </tr>
     <tr>
-      <th>31026</th>
-      <td>37.0</td>
-      <td>8.0</td>
-      <td>19.2</td>
-      <td>0.0</td>
-      <td>8.0</td>
-      <td>43.00000</td>
-      <td>W</td>
-      <td>S</td>
-      <td>26.0</td>
-      <td>17.0</td>
-      <td>76.0</td>
-      <td>52.0</td>
-      <td>0.707560</td>
-      <td>0.706653</td>
-      <td>9.6</td>
-      <td>16.1</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>103982</th>
-      <td>48.0</td>
-      <td>19.1</td>
-      <td>38.5</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>52.00000</td>
-      <td>ESE</td>
-      <td>NNE</td>
-      <td>19.0</td>
-      <td>22.0</td>
-      <td>21.0</td>
-      <td>9.0</td>
-      <td>0.708046</td>
-      <td>0.706167</td>
-      <td>25.2</td>
-      <td>37.0</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>25635</th>
-      <td>30.0</td>
-      <td>8.4</td>
-      <td>17.5</td>
-      <td>0.0</td>
-      <td>8.0</td>
-      <td>54.00000</td>
-      <td>SSW</td>
-      <td>S</td>
-      <td>22.0</td>
-      <td>26.0</td>
-      <td>47.0</td>
-      <td>44.0</td>
-      <td>0.707940</td>
-      <td>0.706273</td>
-      <td>13.5</td>
-      <td>15.4</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>105836</th>
-      <td>1.0</td>
-      <td>9.5</td>
-      <td>14.5</td>
-      <td>2.4</td>
+      <th>82</th>
+      <td>273</td>
+      <td>Gran Turismo 5 Prologue</td>
       <td>13.0</td>
-      <td>39.97052</td>
-      <td>SW</td>
-      <td>SSW</td>
-      <td>19.0</td>
-      <td>9.0</td>
-      <td>58.0</td>
-      <td>53.0</td>
-      <td>0.706865</td>
-      <td>0.707349</td>
-      <td>12.2</td>
-      <td>13.8</td>
-      <td>Yes</td>
+      <td>2007.0</td>
+      <td>6</td>
+      <td>115.0</td>
+      <td>0.573162</td>
+      <td>0.819442</td>
+      <td>0.57</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <th>523</th>
+      <td>3439</td>
+      <td>Mega Man X7</td>
+      <td>12.0</td>
+      <td>2003.0</td>
+      <td>0</td>
+      <td>25.0</td>
+      <td>0.791285</td>
+      <td>0.611448</td>
+      <td>0.14</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <th>332</th>
+      <td>15686</td>
+      <td>Machi: Unmei no Kousaten</td>
+      <td>15.0</td>
+      <td>2006.0</td>
+      <td>1</td>
+      <td>27.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.02</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>14349</td>
+      <td>Hiiro no Kakera 2: Hisui no Shizuku</td>
+      <td>12.0</td>
+      <td>2007.0</td>
+      <td>1</td>
+      <td>62.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.03</td>
+      <td>0.00</td>
     </tr>
     <tr>
       <th>...</th>
@@ -17747,117 +16886,75 @@ test_size - значение с плавающей точкой.
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>16440</th>
-      <td>24.0</td>
-      <td>7.0</td>
-      <td>19.4</td>
-      <td>0.2</td>
-      <td>13.0</td>
-      <td>39.97052</td>
-      <td>Unknown</td>
-      <td>SW</td>
-      <td>0.0</td>
-      <td>19.0</td>
-      <td>76.0</td>
-      <td>75.0</td>
-      <td>0.707940</td>
-      <td>0.706273</td>
-      <td>11.8</td>
-      <td>16.4</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>87608</th>
-      <td>14.0</td>
-      <td>21.0</td>
-      <td>23.4</td>
-      <td>2.2</td>
-      <td>10.0</td>
-      <td>37.00000</td>
-      <td>SW</td>
-      <td>SSE</td>
-      <td>9.0</td>
-      <td>24.0</td>
-      <td>76.0</td>
-      <td>91.0</td>
-      <td>0.707563</td>
-      <td>0.706650</td>
-      <td>21.9</td>
-      <td>18.8</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <th>37237</th>
-      <td>42.0</td>
-      <td>18.8</td>
-      <td>39.0</td>
-      <td>0.0</td>
-      <td>15.0</td>
-      <td>46.00000</td>
-      <td>E</td>
-      <td>SSE</td>
-      <td>13.0</td>
-      <td>13.0</td>
-      <td>38.0</td>
+      <th>140</th>
+      <td>12669</td>
+      <td>Tom Clancy's Ghost Recon: Advanced Warfighter</td>
       <td>12.0</td>
-      <td>0.708256</td>
-      <td>0.705955</td>
-      <td>27.4</td>
-      <td>37.4</td>
-      <td>No</td>
+      <td>2006.0</td>
+      <td>8</td>
+      <td>132.0</td>
+      <td>0.832050</td>
+      <td>0.554700</td>
+      <td>0.00</td>
+      <td>0.01</td>
     </tr>
     <tr>
-      <th>96573</th>
-      <td>22.0</td>
-      <td>15.7</td>
-      <td>32.8</td>
-      <td>0.0</td>
-      <td>9.0</td>
-      <td>52.00000</td>
-      <td>ENE</td>
-      <td>NNE</td>
-      <td>19.0</td>
-      <td>13.0</td>
-      <td>65.0</td>
-      <td>34.0</td>
-      <td>0.708227</td>
-      <td>0.705985</td>
-      <td>23.5</td>
-      <td>32.7</td>
-      <td>No</td>
+      <th>149</th>
+      <td>4849</td>
+      <td>Mother 3</td>
+      <td>5.0</td>
+      <td>2006.0</td>
+      <td>7</td>
+      <td>95.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.39</td>
+      <td>0.01</td>
     </tr>
     <tr>
-      <th>8179</th>
-      <td>10.0</td>
-      <td>3.4</td>
-      <td>14.7</td>
-      <td>0.4</td>
-      <td>11.0</td>
-      <td>26.00000</td>
-      <td>S</td>
-      <td>SW</td>
-      <td>9.0</td>
-      <td>11.0</td>
-      <td>73.0</td>
-      <td>46.0</td>
-      <td>0.708140</td>
-      <td>0.706072</td>
-      <td>8.1</td>
-      <td>14.3</td>
-      <td>No</td>
+      <th>498</th>
+      <td>1179</td>
+      <td>Hannah Montana: Music Jam</td>
+      <td>3.0</td>
+      <td>2007.0</td>
+      <td>0</td>
+      <td>36.0</td>
+      <td>0.944136</td>
+      <td>0.329557</td>
+      <td>0.00</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>7389</td>
+      <td>Senran Kagura 2: Deep Crimson</td>
+      <td>1.0</td>
+      <td>2014.0</td>
+      <td>0</td>
+      <td>79.0</td>
+      <td>0.948683</td>
+      <td>0.316228</td>
+      <td>0.08</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>16586</td>
+      <td>Carmageddon 64</td>
+      <td>8.0</td>
+      <td>1999.0</td>
+      <td>0</td>
+      <td>137.0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.00</td>
+      <td>0.00</td>
     </tr>
   </tbody>
 </table>
-<p>28158 rows × 17 columns</p>
+<p>111 rows × 10 columns</p>
 </div>
 </div>
 
@@ -17897,18 +16994,18 @@ test_size - значение с плавающей точкой.
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>119008    0
-68281     0
-42953     0
-91339     0
-26428     0
-         ..
-110268    0
-119879    1
-103694    0
-131932    0
-121958    1
-Name: RainTomorrow, Length: 112629, dtype: int32</pre>
+<pre>18     2011.0
+325    2009.0
+486    2002.0
+296    2011.0
+478    2006.0
+        ...  
+71     2001.0
+106    2001.0
+270    2008.0
+435    2000.0
+102    2010.0
+Name: Year, Length: 442, dtype: float64</pre>
 </div>
 
 </div>
@@ -17947,18 +17044,18 @@ Name: RainTomorrow, Length: 112629, dtype: int32</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>117237    0
-31026     1
-103982    0
-25635     0
-105836    0
-         ..
-16440     1
-87608     1
-37237     0
-96573     1
-8179      0
-Name: RainTomorrow, Length: 28158, dtype: int32</pre>
+<pre>548    2006.0
+82     2007.0
+523    2003.0
+332    2006.0
+132    2007.0
+        ...  
+140    2006.0
+149    2006.0
+498    2007.0
+153    2014.0
+172    1999.0
+Name: Year, Length: 111, dtype: float64</pre>
 </div>
 
 </div>
@@ -17998,10 +17095,10 @@ Name: RainTomorrow, Length: 28158, dtype: int32</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Количестов входных обучающих данных 112629
-Количестов проверочных обучающих данных 112629
-Количестов входных тестовых данных 28158
-Количестов проверочных тестовых данных 28158
+<pre>Количестов входных обучающих данных 442
+Количестов проверочных обучающих данных 442
+Количестов входных тестовых данных 111
+Количестов проверочных тестовых данных 111
 </pre>
 </div>
 </div>
